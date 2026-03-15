@@ -7,7 +7,6 @@ import {
   ButtonAtom,
   ButtonType,
   ContainerAtom,
-  IconAtom,
 } from '@brejcha13320/design-system-bootstrap';
 
 @Component({
@@ -15,7 +14,6 @@ import {
   imports: [
     BadgeAtom,
     ButtonAtom,
-    IconAtom,
     ContainerAtom,
     CommonModule,
   ],
@@ -43,16 +41,10 @@ export class Atoms {
     { type: 'dark', idButton: 'idButttonDark' },
   ];
 
-  icons: { name: string, size: number }[] = [
-    { name: 'bootstrap', size: 1 },
-    { name: 'apple', size: 2 },
-    { name: 'bell', size: 3 },
-    { name: 'android', size: 4 },
-    { name: 'ban', size: 5 },
-  ]
+  lastAtomInteraction: string = 'Sin interacciones por ahora.';
 
   onClick(idButton: string){
-    alert(`Click en el Boton ${idButton}`);
+    this.lastAtomInteraction = `Se hizo click en el átomo Button con id: ${idButton}`;
   }
 
 }

@@ -112,3 +112,13 @@ src/app/atoms/button/
 - En este taller se utilizan componentes standalone
 - Mantener una estructura clara favorece la escalabilidad y mantenibilidad
 - Revisar cobertura de pruebas unitarias y documentación
+
+## ✅ Estado Del Taller
+
+- Dependencias instaladas con `npm i`.
+- Compilación validada con `npm run build`.
+- Pruebas unitarias validadas con `npm run test -- --runInBand`.
+- Showcase implementado y visible en rutas:
+	- `/atoms`: ejemplos funcionales de 2 átomos (`BadgeAtom` y `ButtonAtom`).
+	- `/molecules`: ejemplos funcionales de 2 moléculas (`ButtonGroupMolecule` y `NavLinkMolecule`).
+	- `/organisms`: ejemplo funcional del organismo `NavbarOrganism`.

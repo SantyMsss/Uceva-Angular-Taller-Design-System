@@ -33,7 +33,9 @@ export class Molecules {
     { text: 'Link 3', url: '/organisms' },
   ];
 
+  lastMoleculeInteraction: string = 'Sin interacciones por ahora.';
+
   onClick(idButton: string){
-    alert(`Click en el Boton de Grupo ${idButton}`);
+    this.lastMoleculeInteraction = `Se hizo click en la molécula ButtonGroup con id: ${idButton}`;
   }
 }

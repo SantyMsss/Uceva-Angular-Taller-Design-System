@@ -1,8 +1,14 @@
+<p class="mb-4">
+    Ruta de <strong>Moléculas</strong>: se muestran dos composiciones de átomos
+    (<strong>Button Group</strong> y <strong>Nav Link</strong>).
+</p>
+
 <dsb-container-atom title="Button Group" >
     <dsb-button-group-molecule 
         [buttonsGroupData]="buttonsGroupData" 
         (clicker)="onClick($event)" >
     </dsb-button-group-molecule>
+    <p class="mt-3 mb-0 text-muted">{{ lastMoleculeInteraction }}</p>
 </dsb-container-atom>
 
 <dsb-container-atom title="Nav Link" >
