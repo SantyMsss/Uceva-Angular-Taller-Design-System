@@ -1,10 +1,7 @@
-<dsb-container-atom title="Icon" >
-    <section class="d-flex gap-5" >
-        @for(icon of icons; track icon){
-            <dsb-icon-atom [icon]="icon.name" [size]="icon.size"></dsb-icon-atom>
-        }
-    </section>
-</dsb-container-atom>
+<p class="mb-4">
+    Ruta de <strong>Átomos</strong>: se muestran los dos componentes base del taller
+    (<strong>Badge</strong> y <strong>Button</strong>).
+</p>
 
 <dsb-container-atom title="Badge" >
     <section class="d-flex gap-2" >
@@ -25,4 +22,5 @@
             </dsb-button-atom>
         }
     </section>
+    <p class="mt-3 mb-0 text-muted">{{ lastAtomInteraction }}</p>
 </dsb-container-atom>

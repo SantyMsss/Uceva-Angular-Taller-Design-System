@@ -18,5 +18,17 @@ export class Organisms {
       { text: 'Moléculas', url: '/molecules' },
       { text: 'Organismos', url: '/organisms' },
     ]
-  }
+  };
+
+  navbarCompactConfig: NavbarConfig = {
+    title: 'Showcase Organismo',
+    iconConfig: {
+      icon: 'diagram-3-fill',
+      size: 1.5,
+    },
+    navLinks: [
+      { text: 'Inicio', url: '/atoms' },
+      { text: 'Componentes', url: '/molecules' },
+    ],
+  };
 }
