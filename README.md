@@ -113,3 +113,31 @@ src/app/atoms/button/
 - Mantener una estructura clara favorece la escalabilidad y mantenibilidad
 - Revisar cobertura de pruebas unitarias y documentación
 
+## ✅ Estado Del Taller
+
+- Dependencias instaladas con `npm i`.
+- Compilación validada con `npm run build`.
+- Pruebas unitarias validadas con `npm run test -- --runInBand`.
+- Showcase implementado y visible en rutas:
+	- `/atoms`: ejemplos funcionales de 2 átomos (`BadgeAtom` y `ButtonAtom`).
+	- `/molecules`: ejemplos funcionales de 2 moléculas (`ButtonGroupMolecule` y `NavLinkMolecule`).
+	- `/organisms`: ejemplo funcional del organismo `NavbarOrganism`.
+
+## 📌 Criterios De Evaluación (+0.1)
+
+| Criterio | Estado | Evidencia |
+|---|---|---|
+| Aplicación correcta de la jerarquía Atomic Design | ✅ Cumple | Se implementan 2 átomos, 2 moléculas y 1 organismo en la librería y en el Showcase. |
+| Estructura (scaffolding) organizada del sistema de diseño | ✅ Cumple | Estructura por capas: `core/interfaces`, `presentation/atoms`, `presentation/molecules`, `presentation/organisms`. |
+| Renderizado correcto en el Showcase | ✅ Cumple | Rutas funcionales: `/atoms`, `/molecules` y `/organisms`. |
+| Uso adecuado de interfaces y tipado fuerte | ✅ Cumple | Interfaces y type aliases tipados (`NavLink`, `NavbarConfig`, `ButtonGroupData`, `BadgeType`, `ButtonType`, etc.). |
+| Funcionamiento general del proyecto | ✅ Cumple | Instalación, build, tests y ejecución local verificados. |
+| Pruebas unitarias con cobertura superior al 80% usando Jest | ✅ Cumple | Cobertura actual: **100%** (`npm run test:coverage`). |
+| Documentación técnica con cobertura superior al 80% usando Compodoc | ✅ Cumple | Cobertura documental actual: **100%** (`npm run compodoc`). |
+
+### 🔎 Comandos De Verificación
+
+- `npm run build`
+- `npm run test:coverage`
+- `npm run compodoc`
+
